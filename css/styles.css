@@ -29,14 +29,36 @@ h1,h2,h3,h4,p,ul{font-family: 'roboto', sans-serif;
 
 .container {
     width: 100%;
-    max-width: 1600px;
+    max-width: 1230px;
     margin: 0 auto;
-    padding: 0 24px;
+    padding: 0 15px;
 }
 
+/* Header */
 
+.header-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 
-.logo-link{text-decoration: none;}
+.header-nav{
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    gap: 93px;
+}
+
+.page-header{
+    padding: 24px 0 25px;
+}
+
+/* LOGO */
+.logo-link{text-decoration: none;
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;}
+
 .logo-web{color: var(--brand-color-accent);
     font-family:'Raleway';
     font-weight:700;
@@ -64,6 +86,8 @@ h1,h2,h3,h4,p,ul{font-family: 'roboto', sans-serif;
 .link:hover, .link:focus {color: var(--brand-color-accent);}
 .link.current{color: var(--brand-color-accent);}
 
+/* SITE-NAV header */
+
 .site-nav{color: var(--brand-color-text);
     list-style-type: none;
     font-family: 'roboto';
@@ -71,10 +95,15 @@ h1,h2,h3,h4,p,ul{font-family: 'roboto', sans-serif;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    text-decoration: none;}
+    text-decoration: none;
+     display: flex;
+     gap: 50px;}
+     
 .site-nav:hover, .site-nav:focus {color: var(--brand-color-accent);}
 
-.contacts-list{list-style-type: none;}
+.contacts-list{list-style-type: none;
+    display: flex;
+    gap: 50px;}
 
 /* button */
 .button-hero{
@@ -114,14 +143,20 @@ h1,h2,h3,h4,p,ul{font-family: 'roboto', sans-serif;
         letter-spacing: 0.03em;
         background-color: var(--brand-color-accent);}
 
-.hero{background-color: var(--brand-color-bg);}
+.hero{background-color: var(--brand-color-bg);
+  padding: 200px 0;}
 
 .hero-title{color: var(--main-white);
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
     letter-spacing: 0.06em;
-    text-transform: uppercase;}
+    text-transform: uppercase;
+    text-align: center;
+        max-width: 696px;
+        margin: 0 auto;
+        padding: 200px 0 280px;
+}
 
 .benefits{list-style: none;}
 
@@ -184,6 +219,7 @@ h1,h2,h3,h4,p,ul{font-family: 'roboto', sans-serif;
   
 .team-memb{background-color: var(--main-white);
        list-style-type: none;}
+
 .team-name{
     color: var(--brand-color-title);
     font-weight: 500;
