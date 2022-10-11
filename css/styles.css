@@ -34,6 +34,15 @@ h1,h2,h3,h4,p,ul{font-family: 'roboto', sans-serif;
     padding: 0 15px;
 }
 
+.button{
+    display: inline-block;
+    position: absolute;
+     width: 216px;
+    border: 1px;
+    border-color: var(--brand-color-accent);
+    border-radius: 6px;
+    padding: 10px 29px 10px 30px;
+}
 /* Header */
 
 .header-container{
@@ -51,6 +60,7 @@ h1,h2,h3,h4,p,ul{font-family: 'roboto', sans-serif;
 
 .page-header{
     padding: 24px 0 25px;
+    border-bottom: 1px solid #ececec;
 }
 
 /* LOGO */
@@ -105,7 +115,7 @@ h1,h2,h3,h4,p,ul{font-family: 'roboto', sans-serif;
     display: flex;
     gap: 50px;}
 
-/* button */
+/* buttons */
 .button-hero{
         color: var(--main-white);
         background-color: var(--brand-color-accent);
@@ -114,8 +124,14 @@ h1,h2,h3,h4,p,ul{font-family: 'roboto', sans-serif;
         font-weight: 700;
         font-size: 16px;
         line-height: 1.87;
+        text-align: center;
         letter-spacing: 0.06em;
         cursor: pointer;
+        width: 216px;
+        height: 50px;
+        display: block;
+        text-align: center;
+         margin: 0 auto;
 }
 
 .buttons{
@@ -143,8 +159,18 @@ h1,h2,h3,h4,p,ul{font-family: 'roboto', sans-serif;
         letter-spacing: 0.03em;
         background-color: var(--brand-color-accent);}
 
-.hero{background-color: var(--brand-color-bg);
-  padding: 200px 0;}
+        
+/* hero section */
+
+.hero {
+    background-color: var(--brand-color-bg);
+    padding: 200px 0;
+}
+
+.hero-content{
+    max-width: 696px;
+    align-items: center;
+}
 
 .hero-title{color: var(--main-white);
     font-weight: 900;
@@ -153,12 +179,20 @@ h1,h2,h3,h4,p,ul{font-family: 'roboto', sans-serif;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     text-align: center;
-        max-width: 696px;
-        margin: 0 auto;
-        padding: 200px 0 280px;
+    max-width: 696px;
+    margin: 0 auto 30px auto;
 }
 
-.benefits{list-style: none;}
+/* benefits section */
+
+.benefits-container{
+    max-width: 1170px;
+    display: flex;
+    flex-basis: (100%-90px)/4;
+    gap: 30px;
+    list-style: none;
+    }
+/* .benefits{list-style: none;} */
 
 .visually-hidden{position: absolute;
     white-space: nowrap;
